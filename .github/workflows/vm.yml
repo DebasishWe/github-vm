@@ -1,6 +1,13 @@
 name: MacRDP
 on: 
   workflow_dispatch:
+    inputs:
+      name:
+        type: run function
+        description: Run Cycle
+        options: 
+        - shortCycle
+        - longCycle
 jobs:
   build:
     name: MacRDP
